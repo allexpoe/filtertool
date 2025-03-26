@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "export": "ts-node ./src/scripts/export.ts",
-    "generate-types": "ts-node ./src/scripts/generate-types.ts"
+    "generate-types": "ts-node ./src/scripts/generateTypes.ts"
   },
   "keywords": [],
   "author": "",

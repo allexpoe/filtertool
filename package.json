@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "fast-csv": "^5.0.2"
+    "fast-csv": "^5.0.2",
+    "axios": "^1.8.4"
   }
 }

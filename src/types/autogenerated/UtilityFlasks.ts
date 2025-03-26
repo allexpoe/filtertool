@@ -1,0 +1,1 @@
+export type UtilityFlasks = "Quicksilver Flask" | "Bismuth Flask" | "Stibnite Flask" | "Amethyst Flask" | "Ruby Flask" | "Sapphire Flask" | "Topaz Flask" | "Silver Flask" | "Aquamarine Flask" | "Granite Flask" | "Jade Flask" | "Quartz Flask" | "Sulphur Flask" | "Basalt Flask" | "Diamond Flask" | "Gold Flask" | "Corundum Flask" | "Iron Flask" | (string & {})

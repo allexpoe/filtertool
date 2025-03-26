@@ -1,0 +1,1 @@
+export type ExpeditionLogbooks = "Expedition Logbook" | (string & {})

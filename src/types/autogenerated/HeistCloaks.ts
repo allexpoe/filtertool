@@ -1,0 +1,1 @@
+export type HeistCloaks = "Torn Cloak" | "Tattered Cloak" | "Hooded Cloak" | "Whisper-woven Cloak" | (string & {})

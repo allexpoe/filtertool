@@ -1,7 +1,7 @@
 import { Condition, Rule, RuleContent } from './types'
 
-/**
- * Rule content serves as a proxy for accessing the map of conditions and their values,
+/* Rule content
+ * Serves as a proxy for accessing the map of conditions and their values,
  * so that you can use a rule() object as a container for several rules, where
  * transformations to that rule() object will apply to all rules it contains
  */
@@ -40,8 +40,8 @@ const content = (rules: Rule[]): RuleContent => {
   }
 }
 
-/**
- * Rule object manages the methods used to set conditions in the rule content
+/* Rule object
+ * Manages the methods used to set conditions in the rule content
  */
 const rule = (...rules: Rule[]): Rule => {
   return {
@@ -82,6 +82,11 @@ const rule = (...rules: Rule[]): Rule => {
 
     itemClass(...itemClass) {
       this.content.set('Class', itemClass.map((item) => `"${item}"`).join(' '))
+      return this
+    },
+
+    itemClassExact(...itemClass) {
+      this.content.set('Class', '== ' + itemClass.map((item) => `"${item}"`).join(' '))
       return this
     },
 

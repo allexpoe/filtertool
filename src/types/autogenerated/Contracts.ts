@@ -1,0 +1,1 @@
+export type Contracts = "Contract: Bunker" | "Contract: Smuggler's Den" | "Contract: Laboratory" | "Contract: Repository" | "Contract: Prohibited Library" | "Contract: Tunnels" | "Contract: Underbelly" | "Contract: Records Office" | "Contract: Mansion" | "Preventative Contract" | "Familial Contract" | "Vigilante Contract" | "Naval Contract" | "Vengeful Contract" | (string & {})

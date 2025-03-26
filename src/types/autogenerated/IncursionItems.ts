@@ -1,0 +1,1 @@
+export type IncursionItems = "Stone of Passage" | "Flashpowder Keg" | (string & {})

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "export": "ts-node ./src/scripts/export.ts"
+    "export": "ts-node ./src/scripts/export.ts",
+    "generate-types": "ts-node ./src/scripts/generate-types.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "fast-csv": "^5.0.2"
   }
 }

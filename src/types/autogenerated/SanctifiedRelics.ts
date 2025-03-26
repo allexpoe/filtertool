@@ -1,0 +1,1 @@
+export type SanctifiedRelics = "Sanctified Relic" | (string & {})

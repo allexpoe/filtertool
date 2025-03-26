@@ -1,0 +1,1 @@
+export type Staves = "Gnarled Branch" | "Primitive Staff" | "Long Staff" | "Royal Staff" | "Crescent Staff" | "Woodful Staff" | "Quarterstaff" | "Highborn Staff" | "Moon Staff" | "Primordial Staff" | "Lathi" | "Imperial Staff" | "Eclipse Staff" | "Transformer Staff" | "Reciprocation Staff" | "Battery Staff" | (string & {})

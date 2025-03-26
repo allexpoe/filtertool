@@ -1,0 +1,1 @@
+export type Trinkets = "Thief's Trinket" | (string & {})

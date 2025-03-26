@@ -1,4 +1,7 @@
 import { Condition, Rule, RuleContent } from './types'
+import { createSoundFile } from './scripts/generateFilterSound'
+
+const soundsFolder = process.env.SOUNDS_FOLDER
 
 /* Rule content
  * Serves as a proxy for accessing the map of conditions and their values,
@@ -112,8 +115,12 @@ const rule = (...rules: Rule[]): Rule => {
       return this
     },
 
-    customSound(path, volume = 300) {
-      this.content.set('CustomAlertSound', `"allex-sounds/${path}" ${volume}`)
+    customSound(path, volume = 300, generate = true) {
+      const finalPath = `${soundsFolder}/${path}`;
+      if(generate == true) {
+        createSoundFile(path);
+      }
+      this.content.set('CustomAlertSound', `"${soundsFolder}/${path}" ${volume}`)
       return this
     },
 

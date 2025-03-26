@@ -4,6 +4,10 @@ import path from 'path'
 import { exec } from 'child_process'
 
 export async function createTTSFile(filename: string): Promise<void> {
+    if (fs.existsSync(filename)) {
+        return
+    }
+
     const text = path.basename(filename, path.extname(filename));
     const url = `https://api.streamelements.com/kappa/v2/speech?voice=Brian&text=${encodeURIComponent(text)}`;
     const basename = path.basename(filename);
